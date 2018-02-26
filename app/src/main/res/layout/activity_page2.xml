@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.will.sncf.Page2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sncf" />
+
+    <TextView
+        android:id="@+id/idAccueil"
+        android:layout_width="337dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Première page de questions"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Propreté"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/t4"
+        app:layout_constraintEnd_toStartOf="@+id/idProprete"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/idProprete"
+        android:layout_width="166dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/idRBp1"
+            android:layout_width="154dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Peu Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBp2"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBp3"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Très Satisfait" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Ponctualité"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idPonctualite"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/idPonctualite"
+        android:layout_width="185dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProprete"
+        app:layout_constraintVertical_bias="0.347"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/idRpc1"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Peu Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRpc2"
+            android:layout_width="174dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBpc3"
+            android:layout_width="174dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Très Satisfait" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idSuivant2"
+        android:layout_width="288dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+
+</android.support.constraint.ConstraintLayout>

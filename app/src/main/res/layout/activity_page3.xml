@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.will.sncf.Page3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sncf" />
+
+    <TextView
+        android:id="@+id/idAccueil2"
+        android:layout_width="340dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Activity"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvClimatisation"
+        android:layout_width="133dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Climatisation"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvConfort"
+        app:layout_constraintEnd_toStartOf="@+id/idClimatisation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659"
+        tools:ignore="MissingConstraints" />
+
+
+    <RadioGroup
+        android:id="@+id/idClimatisation"
+        android:layout_width="198dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/idConfort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/idRBc1"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Peu Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBc2"
+            android:layout_width="187dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBc3"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Très Satisfait" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvConfort"
+        android:layout_width="144dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Confort"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idConfort"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/idConfort"
+        android:layout_width="196dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/idRBcf1"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Peu Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBcf2"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idRBcf3"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Très Satisfait" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idSuivant3"
+        android:layout_width="342dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="SUIVANT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
